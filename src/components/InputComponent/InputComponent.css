@@ -1,0 +1,18 @@
+#userInput {
+  width: 30%;
+  height: 5vh;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid rgba(72, 202, 228, 0.7);
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #ADE8F4;
+  text-align: center;
+}
+
+#userInput::placeholder {
+  color: white;
+  opacity: 40%;
+  font-style: italic;
+  text-align: center;
+}
