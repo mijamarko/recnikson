@@ -1,4 +1,4 @@
-# recnikSON
+# rečnikSON
 
 ## JSON rečnik za osobe koje mrze svoje oči.
 
