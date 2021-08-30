@@ -1,0 +1,28 @@
+.meaningSelector {
+  text-align: left;
+}
+
+.meaningSelector > a {
+  display: inline-block;
+  min-width: 100px;
+  background-color: #05386B;
+  text-decoration: none;
+  color: inherit;
+  padding: 0px 5px;
+  font-size: 1.5rem;
+  border-right: 1px solid white;;
+}
+
+.meaningSelector > a:hover {
+  background-color: #0f569c;
+}
+
+.selected {
+  background-color: #0f569c;
+}
+
+.wordDefinitions {
+  height: 70vh;
+  margin: 0;
+  overflow: auto;
+}

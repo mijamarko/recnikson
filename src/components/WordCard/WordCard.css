@@ -1,0 +1,17 @@
+.wordCard {
+  font-size: 1.5rem;
+}
+
+.phonetic {
+  color: #EDF5E1;
+  text-decoration: none;
+}
+
+.phonetic:visited {
+  color: #EDF5E1;
+  text-decoration: none;
+}
+
+.phonetic:hover {
+  color: #05386B;
+}

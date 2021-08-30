@@ -1,0 +1,11 @@
+.wordSwitcher {
+  color: #EDF5E1;
+  font-size: 5rem;
+  text-align: center;
+  margin: auto;
+}
+
+.wordSwitcher:hover{
+  color: #05386B;
+  cursor: pointer;
+}

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import './InputComponent.css'
+import '../Input/Input.css'
 
-const InputComponent = (props) => {
+const Input = (props) => {
+  
 const [placeholderState, setPlaceholderState] = useState("Unesite željenu reč...")
 
 const erasePlaceholderText = () => {
@@ -24,19 +25,21 @@ const getWord = (event) => {
   let word = document.getElementById('userInput').value;
   if(event.key === "Enter" && word.length > 0){
     loadData(word)//vraca niz
-    .then(data => props.setFetchResponse(data))
+    .then(data => props.setFetchData(data))
   }
 }
 
 
   return (
-    <div><input type="text" id="userInput" placeholder={placeholderState} 
-    onFocus={erasePlaceholderText} 
-    onBlur={resetPlaceholderText}
-    onKeyPress={getWord}/>
+    <div>
+      <input type="text" id="userInput" 
+      placeholder={placeholderState} 
+      onFocus={erasePlaceholderText} 
+      onBlur={resetPlaceholderText}
+      onKeyPress={getWord}/>
     </div>
     
   )
 }
 
-export default InputComponent
+export default Input

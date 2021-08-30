@@ -1,0 +1,16 @@
+.definitionCard {
+  margin-bottom: 2%;
+  background-color: #8EE4AF;
+  min-height: 75px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.definitionCard:hover {
+  outline: #05386B 1px solid;
+}
+
+/* .definitionCardItem {
+  text-align: center;
+  margin: 0;
+} */
