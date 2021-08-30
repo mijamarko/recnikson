@@ -17,7 +17,7 @@
   background-color: #0f569c;
 }
 
-.selected {
+.meaningSelector >a.selected {
   background-color: #0f569c;
 }
 

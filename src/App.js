@@ -4,8 +4,18 @@ import Output from "./components/Output/Output"
 import Input from "./components/Input/Input"
 
 function App() {
-  // const [fetchData, setFetchData] = useState([])
-  const [fetchData, setFetchData] = useState([
+  const [fetchData, setFetchData] = useState([])
+
+  return (
+    <div id="app">
+      <Input setFetchData={setFetchData}/>
+      {fetchData.length > 0 && <Output fetchData={fetchData} />}
+    </div>
+  )
+
+  //Ovo ispod je bilo za testiranje i odbija da se folduje, ostavljam ga jer mozda ustreba
+
+  /*const [fetchData, setFetchData] = useState([
     {
       word: "set",
       phonetic: "sɛt",
@@ -386,14 +396,9 @@ function App() {
         },
       ],
     },
-  ])
+  ])*/
 
-  return (
-    <div id="app">
-      <Input setFetchData={setFetchData}/>
-      {fetchData.length > 0 && <Output fetchData={fetchData} />}
-    </div>
-  )
+  
 }
 
 export default App
