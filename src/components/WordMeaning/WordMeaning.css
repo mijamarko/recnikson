@@ -2,7 +2,7 @@
   text-align: left;
 }
 
-.meaningSelector > a {
+.meaning {
   display: inline-block;
   min-width: 100px;
   background-color: #05386B;
@@ -13,11 +13,11 @@
   border-right: 1px solid white;;
 }
 
-.meaningSelector > a:hover {
+.meaning:hover {
   background-color: #0f569c;
 }
 
-.meaningSelector >a.selected {
+.selected {
   background-color: #0f569c;
 }
 
