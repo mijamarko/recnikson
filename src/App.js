@@ -4,14 +4,19 @@ import Output from "./components/Output/Output"
 import Input from "./components/Input/Input"
 
 function App() {
+  //podesavanje state-a, apdejtuje se iz child komponente Input
   const [fetchData, setFetchData] = useState([])
 
+
+  //renderuje Input komponentu i Output komponentu ukoliko postoje neki podaci u fetchData promenljivoj
   return (
     <div id="app">
       <Input setFetchData={setFetchData}/>
       {fetchData.length > 0 && <Output fetchData={fetchData} />}
     </div>
   )
+
+  export default App
 
   //Ovo ispod je bilo za testiranje i odbija da se folduje, ostavljam ga jer mozda ustreba
 
@@ -401,4 +406,4 @@ function App() {
   
 }
 
-export default App
+
