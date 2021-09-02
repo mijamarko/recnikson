@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import Output from "./components/Output/Output"
 import Input from "./components/Input/Input"
 
-function App() {
+export default function App() {
   //podesavanje state-a, apdejtuje se iz child komponente Input
   const [fetchData, setFetchData] = useState([])
 
@@ -16,7 +16,7 @@ function App() {
     </div>
   )
 
-  export default App
+  // export default App
 
   //Ovo ispod je bilo za testiranje i odbija da se folduje, ostavljam ga jer mozda ustreba
 
